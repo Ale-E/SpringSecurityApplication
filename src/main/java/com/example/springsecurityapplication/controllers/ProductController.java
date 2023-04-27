@@ -51,11 +51,11 @@ public class ProductController {
                 } else if(price.equals("sorted_by_descending_price")){
                     if(!contract.isEmpty()){
                         System.out.println(contract);
-                        if(contract.equals("furniture")){
+                        if(contract.equals("rings")){
                             model.addAttribute("search_product", productRepository.findByTitleAndCategoryOrderByPriceDesc(search.toLowerCase(), Float.parseFloat(ot), Float.parseFloat(Do), 1));
-                        }else if (contract.equals("appliances")) {
+                        }else if (contract.equals("pendants")) {
                             model.addAttribute("search_product", productRepository.findByTitleAndCategoryOrderByPriceDesc(search.toLowerCase(), Float.parseFloat(ot), Float.parseFloat(Do), 3));
-                        } else if (contract.equals("clothes")) {
+                        } else if (contract.equals("earrings")) {
                             model.addAttribute("search_product", productRepository.findByTitleAndCategoryOrderByPriceDesc(search.toLowerCase(), Float.parseFloat(ot), Float.parseFloat(Do), 2));
                         }
                     }  else {
