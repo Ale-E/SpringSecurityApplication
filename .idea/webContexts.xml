@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/resources/templates/product/addProduct.html" value="file://$PROJECT_DIR$/src/main/resources/templates/product" />
         <entry key="file://$PROJECT_DIR$/src/main/resources/templates/product/product.html" value="file://$PROJECT_DIR$/src/main/resources/templates/product" />
+        <entry key="file://$PROJECT_DIR$/src/main/resources/templates/registration.html" value="file://$PROJECT_DIR$/src/main/resources/templates" />
         <entry key="file://$PROJECT_DIR$/src/main/resources/templates/user/cart.html" value="file://$PROJECT_DIR$/src/main/resources/templates/user" />
       </map>
     </option>
