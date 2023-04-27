@@ -30,15 +30,19 @@
             background-color: indigo;
             text-align: center;
         }
+
         body{
             background-color: pink;
         }
+
+
     </style>
 </head>
 <body>
 
     <h1>Добро пожаловать в хенд-мейд маркет<br> "НЕ класическая ювелирка"!</h1>
-<h3>Cортировка, поиск, фильтрация</h3>
+    <a href="http://localhost:8080/registration">Зарегистрироваться/Войти</a><br>
+    <h3>Cортировка, поиск, фильтрация</h3>
 <form th:method="POST" th:action="@{/product/search}">
     <fieldset>
         <legend>Выберите параметры для сортировки, поиска, фильтрации:</legend>
@@ -73,7 +77,8 @@
 </form>
 <hr>
  <h3>Результат поиска, cортировки, фильтрации</h3>
-<div th:each="product : ${search_product}>
+
+    <div th:each="product : ${search_product}">
     <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="300px">
     <br>
     <a th:href="@{/product/info/{id}(id=${product.getId()})}" th:text="${product.getTitle()}"></a>
@@ -81,6 +86,7 @@
     <hr>
 </div>
 <hr>
+
 <h3>Доступные товары: </h3>
 <div th:each="product : ${products}">
     <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="300px">
